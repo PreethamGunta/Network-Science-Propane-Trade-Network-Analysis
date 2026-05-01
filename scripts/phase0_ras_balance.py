@@ -76,7 +76,11 @@ def ras_balance(W: np.ndarray, u: np.ndarray, v: np.ndarray,
 def main() -> None:
     """Run RAS on every (year, layer) and save the balanced matrices."""
     log_rows = []
-    years = sorted({int(p.stem.split("_")[1]) for p in PHASE0.glob("W_*.npy")})
+    years = sorted({
+        int(p.stem.split("_")[1]) 
+        for p in PHASE0.glob("W_*.npy")
+        if not p.stem.startswith("W_RAS_")
+    })
 
     for y in years:
         for L in LAYERS:
