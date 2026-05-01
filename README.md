@@ -65,7 +65,7 @@ See [`Final_Report/report.pdf`](Final_Report/report.pdf) §5 (Results) and
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/PreethamGunta/Network-Science-Propane-Trade-Network-Analysis.git
+git clone https://github.com/PreethamGunta/Network-Science-Hormuz-Trade-Network-Analysis.git
 cd Network-Science-Propane-Trade-Network-Analysis
 ```
 
